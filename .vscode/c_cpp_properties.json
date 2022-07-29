@@ -1,0 +1,39 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceRoot}",
+                "C:/vscode mingw/mingw64/include/**",
+                "C:/vscode mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++",
+                "C:/vscode mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32",
+                "C:/vscode mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward",
+                "C:/vscode mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include",
+                "C:/vscode mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed",
+                "C:/vscode mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "__GNUC__=6",
+                "__cdecl=__attribute__((__cdecl__))"
+            ],
+            "intelliSenseMode": "msvc-x64",
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": "",
+                "path": [
+                    "${workspaceRoot}",
+                    "C:/vscode mingw/mingw64/include/**",
+                    "C:/vscode mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++",
+                    "C:/vscode mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32",
+                    "C:/vscode mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward",
+                    "C:/vscode mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include",
+                    "C:/vscode mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed",
+                    "C:/vscode mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"
+                ]
+            }
+        }
+    ],
+    "version": 4
+}
