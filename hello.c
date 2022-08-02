@@ -1,3 +1,4 @@
+// 数据结构第五章某一例题demo，同某年复试例题
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
