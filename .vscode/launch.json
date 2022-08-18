@@ -31,7 +31,7 @@
             "environment": [],
             "externalConsole": true,
             "MIMode": "gdb",
-            "miDebuggerPath": "C:\\vscode mingw\\mingw64\\bin\\gdb.exe",// 自己电脑的gdb
+            "miDebuggerPath": "D:\\mingw64\\bin\\gdb.exe",// 自己电脑的gdb
             "preLaunchTask": "echo",//这里和task.json的label相对应
             "setupCommands": [
                 {
