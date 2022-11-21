@@ -8,15 +8,15 @@ struct nonw {
 	char word[80];
 	int value;
 	struct nonw *next;
-} * nonlist[800000] = {};
+} * nonlist[800000] = {0};
 struct stopw {
 	char word[80];
 	struct stopw *next;
-} * slist[500000] = {};
+} * slist[500000] = {0};
 struct dictw {
 	char word[80];
 	struct dictw *next;
-} * dlist[100000] = {};
+} * dlist[100000] = {0};
 struct par {
 	char s[20]; //章节号
 	double value;  //总词频
@@ -24,7 +24,7 @@ struct par {
 	double TNkd[100];
 	double TFkd[100];
 	double SIM;
-} plist[50000] = {};
+} plist[50000] = {0};
 
 void createslist(FILE *fp);
 void createdlist(FILE *pp);
@@ -34,10 +34,10 @@ int isdic(char *word);
 unsigned int hash(char *str);
 int comp(const void *e1, const void *e2);
 int top = 0;
-char k[100][80] = {}, k_num = 0; // k为关键词数组, k_num关键词个数
+char k[100][80] = {0}, k_num = 0; // k为关键词数组, k_num关键词个数
 int m=0;
-int DNk[100]= {}; //关键词出现的文档个数
-double IDFk[100] = {};
+int DNk[100]= {0}; //关键词出现的文档个数
+double IDFk[100] = {0};
 
 int main(int argc, char *argv[]) {
 	int N = 0;
@@ -104,7 +104,7 @@ int main(int argc, char *argv[]) {
 
 void createlist(FILE *in) {
 	int c = 0;
-	char word[80] = {}, *p = word;
+	char word[80] = {0}, *p = word;
 	fscanf(in, "%s", &plist[top].s); //获取章节号
 
 	while ((c = fgetc(in)) != EOF) {
@@ -162,7 +162,7 @@ int comp(const void *e1, const void *e2) {
 
 void createslist(FILE *fp) {
 	// 创建停用表
-	char word[80] = {};
+	char word[80] = {0};
 	while (fscanf(fp, "%s", word) != EOF) {
 		int num = hash(word);
 		struct stopw *r;
@@ -182,7 +182,7 @@ void createslist(FILE *fp) {
 
 void createdlist(FILE *pp) {
 	// 创建字典表
-	char word[80] = {};
+	char word[80] = {0};
 	while (fscanf(pp, "%s", word) != EOF) {
 		int num = hash(word);
 		struct dictw *r;
